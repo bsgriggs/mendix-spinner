@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="mendix.spinner.Spinner" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Web"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Spinner</name>
+    <description>Sub-component to be used in other pluggable widgets</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="General">
+            <property key="spinnerCaption" type="expression" required="false">
+                <caption>Spinner Caption</caption>
+                <description></description>
+                <returnType type="String" />
+            </property>
+            <property key="spinnerColor" type="expression" required="true" defaultValue="'grey'">
+                <caption>Spinner Color</caption>
+                <description />
+                <returnType type="String" />
+            </property>
+            <property key="spinnerSize" type="expression" required="true" defaultValue="'5em'">
+                <caption>Spinner Size</caption>
+                <description></description>
+                <returnType type="String" />
+            </property>
+            <property key="spinnerThickness" type="expression" required="true" defaultValue="'0.5em'">
+                <caption>Spinner Thinkness</caption>
+                <description></description>
+                <returnType type="String" />
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>
