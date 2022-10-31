@@ -2,7 +2,7 @@
   "name": "spinner",
   "widgetName": "Spinner",
   "version": "1.0.0",
-  "description": "Sub-component to be used in other pluggable widgets",
+  "description": "A configurable spinner to be used in conjunction with other widgets",
   "copyright": "© Mendix Technology BV 2022. All rights reserved.",
   "author": "Benjamin Griggs",
   "engines": {
@@ -31,6 +31,6 @@
     "@types/react-dom": "~17.0.1"
   },
   "dependencies": {
-    "classnames": "^2.2.6"
+    "react-spinners": "^0.13.6"
   }
 }
