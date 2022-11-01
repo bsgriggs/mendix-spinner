@@ -10,11 +10,6 @@
     <properties>
         <propertyGroup caption="General">
             <propertyGroup caption="Main">
-                <property key="showSpinner" type="expression" required="true" defaultValue="true">
-                    <caption>Show Spinner?</caption>
-                    <description>Can be used to dynamically control when the spinner is shown</description>
-                    <returnType type="Boolean" /> 
-                </property>
                 <property key="spinnerCaption" type="textTemplate" required="false">
                     <caption>Spinner Caption</caption>
                     <description></description>

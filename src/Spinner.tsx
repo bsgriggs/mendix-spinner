@@ -8,7 +8,6 @@ import "./ui/Spinner.css";
 
 export function Spinner({
     name,
-    showSpinner,
     spinnerType,
     spinnerColor,
     spinnerSize,
@@ -20,7 +19,6 @@ export function Spinner({
     spinnerCaption
 }: SpinnerContainerProps): ReactElement {
     if (
-        showSpinner &&
         spinnerColor.status === ValueStatus.Available &&
         spinnerSize.status === ValueStatus.Available &&
         speedMultiplier.status === ValueStatus.Available &&
