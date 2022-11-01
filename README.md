@@ -19,7 +19,7 @@ Built using [react-spinners](https://github.com/davidhu2000/react-spinners) by D
 3. Run the project then adjust the Style Details (Color, Size, Width, Height, Radius, Margin) based on your needs. Each value should be a string of an actual CSS value. Use a Hex Code for the color and a measurement for the remaining (15px, 3em, 5rem etc.). Note: The style details that are used depends on the Spinner Type. The widget will only show the used details.
 
 ## Demo project
-https://dropdowndatepicker-sandbox.mxapps.io/
+https://widgettesting105-sandbox.mxapps.io/p/spinner
 
 ## Issues, suggestions and feature requests
 For issues with the Mendix interface:
