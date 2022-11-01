@@ -7,7 +7,30 @@ import { CSSProperties } from "react";
 import { DynamicValue } from "mendix";
 import { Big } from "big.js";
 
-export type SpinnerTypeEnum = "bar" | "beat" | "bounce" | "circle" | "climbingBox" | "clip" | "clock" | "dot" | "fade" | "grid" | "hash" | "moon" | "pacman" | "propagate" | "puff" | "pulse" | "ring" | "rise" | "rotate" | "scale" | "skew" | "square" | "sync";
+export type SpinnerTypeEnum =
+    | "bar"
+    | "beat"
+    | "bounce"
+    | "circle"
+    | "climbingBox"
+    | "clip"
+    | "clock"
+    | "dot"
+    | "fade"
+    | "grid"
+    | "hash"
+    | "moon"
+    | "pacman"
+    | "propagate"
+    | "puff"
+    | "pulse"
+    | "ring"
+    | "rise"
+    | "rotate"
+    | "scale"
+    | "skew"
+    | "square"
+    | "sync";
 
 export interface SpinnerContainerProps {
     name: string;

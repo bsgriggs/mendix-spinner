@@ -1,31 +1,22 @@
 import { ReactElement, createElement } from "react";
-import SpinnerMap from "./components/SpinnerMap";
 import Caption from "./components/Caption";
 import { SpinnerPreviewProps } from "../typings/SpinnerProps";
 
-export function preview({
-    spinnerType,
-    spinnerColor,
-    spinnerSize,
-    speedMultiplier,
-    spinnerHeight,
-    spinnerMargin,
-    spinnerRadius,
-    spinnerWidth,
-    spinnerCaption
-}: SpinnerPreviewProps): ReactElement {
+export function preview({ spinnerType, spinnerCaption }: SpinnerPreviewProps): ReactElement {
     return (
-        <div className="mx-spinner">
-            <SpinnerMap
-                spinnerType={spinnerType}
-                spinnerColor={spinnerColor}
-                speedMultiplier={parseFloat(speedMultiplier || '1')}
-                spinnerHeight={spinnerHeight}
-                spinnerMargin={spinnerMargin}
-                spinnerRadius={spinnerRadius}
-                spinnerSize={spinnerSize}
-                spinnerWidth={spinnerWidth}
-            />
+        <div
+            style={{
+                borderRadius: "4px",
+                borderWidth: "1px",
+                borderColor: "gray",
+                borderStyle: "solid",
+                margin: "8px",
+                padding: "4px",
+                display: "flex",
+                flexDirection: "column"
+            }}
+        >
+            <span className="mx-text">{`Spinner - ${spinnerType}`}</span>
             <Caption caption={spinnerCaption} />
         </div>
     );

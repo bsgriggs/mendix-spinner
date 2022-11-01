@@ -58,7 +58,7 @@
                 </property>
             </propertyGroup>
             <propertyGroup caption="Style Details">
-                <property key="spinnerColor" type="expression" required="true" defaultValue="#d8cef5">
+                <property key="spinnerColor" type="expression" required="true" defaultValue="'#d8cef5'">
                     <caption>Spinner Color</caption>
                     <description>Hex color value for the spinner</description>
                     <returnType type="String" />
@@ -73,17 +73,17 @@
                     <description></description>
                     <returnType type="String" />
                 </property>
-                <property key="spinnerWidth" type="expression" defaultValue="'5em'" required="true">
+                <property key="spinnerWidth" type="expression" defaultValue="'2em'" required="true">
                     <caption>Spinner Width</caption>
                     <description></description>
                     <returnType type="String" />
                 </property>
-                <property key="spinnerRadius" type="expression" defaultValue="'5em'" required="true">
+                <property key="spinnerRadius" type="expression" defaultValue="'2em'" required="true">
                     <caption>Spinner Radius</caption>
                     <description></description>
                     <returnType type="String" />
                 </property>
-                <property key="spinnerMargin" type="expression" defaultValue="'5em'" required="true">
+                <property key="spinnerMargin" type="expression" defaultValue="'2em'" required="true">
                     <caption>Spinner Margin</caption>
                     <description></description>
                     <returnType type="String" />

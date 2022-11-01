@@ -180,10 +180,10 @@ const SpinnerMap = ({
                 loader = (
                     <PacmanLoader
                         aria-label="Loading Pacman Spinner"
+                        cssOverride={{ width: `calc(${spinnerSize} * 2)`, height: `calc(${spinnerSize} * 2)` }}
                         color={spinnerColor}
                         speedMultiplier={speedMultiplier}
                         size={spinnerSize}
-                        margin={spinnerMargin}
                     />
                 );
                 break;
@@ -191,6 +191,7 @@ const SpinnerMap = ({
                 loader = (
                     <PropagateLoader
                         aria-label="Loading Propagate Spinner"
+                        cssOverride={{ height: spinnerSize }}
                         color={spinnerColor}
                         speedMultiplier={speedMultiplier}
                         size={spinnerSize}
@@ -231,7 +232,7 @@ const SpinnerMap = ({
             case "rise":
                 loader = (
                     <RiseLoader
-                        aria-label="Loading Pulse Spinner"
+                        aria-label="Loading Rise Spinner"
                         color={spinnerColor}
                         speedMultiplier={speedMultiplier}
                         size={spinnerSize}
@@ -242,7 +243,7 @@ const SpinnerMap = ({
             case "rotate":
                 loader = (
                     <RotateLoader
-                        aria-label="Loading Pulse Spinner"
+                        aria-label="Loading Rotate Spinner"
                         color={spinnerColor}
                         speedMultiplier={speedMultiplier}
                         size={spinnerSize}
@@ -253,7 +254,7 @@ const SpinnerMap = ({
             case "scale":
                 loader = (
                     <ScaleLoader
-                        aria-label="Loading Fade Spinner"
+                        aria-label="Loading Scale Spinner"
                         color={spinnerColor}
                         speedMultiplier={speedMultiplier}
                         height={spinnerHeight}
@@ -266,7 +267,7 @@ const SpinnerMap = ({
             case "skew":
                 return (
                     <SkewLoader
-                        aria-label="Loading Fade Spinner"
+                        aria-label="Loading Skew Spinner"
                         color={spinnerColor}
                         speedMultiplier={speedMultiplier}
                         size={spinnerSize}
@@ -275,7 +276,7 @@ const SpinnerMap = ({
             case "square":
                 return (
                     <SquareLoader
-                        aria-label="Loading Fade Spinner"
+                        aria-label="Loading Square Spinner"
                         color={spinnerColor}
                         speedMultiplier={speedMultiplier}
                         size={spinnerSize}
@@ -284,10 +285,12 @@ const SpinnerMap = ({
             case "sync":
                 loader = (
                     <SyncLoader
-                        aria-label="Loading Fade Spinner"
+                        aria-label="Loading Sync Spinner"
+                        cssOverride={{ height: `calc(${spinnerSize} + 10px)` }}
                         color={spinnerColor}
                         speedMultiplier={speedMultiplier}
                         margin={spinnerMargin}
+                        size={spinnerSize}
                     />
                 );
                 break;
