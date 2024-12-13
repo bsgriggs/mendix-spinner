@@ -1,7 +1,7 @@
 /**
  * This file was generated from Spinner.xml
  * WARNING: All changes made to this file will be overwritten
- * @author Mendix UI Content Team
+ * @author Mendix Widgets Framework Team
  */
 import { CSSProperties } from "react";
 import { DynamicValue } from "mendix";
@@ -18,15 +18,20 @@ export interface SpinnerContainerProps {
     speedMultiplier: DynamicValue<Big>;
     spinnerType: SpinnerTypeEnum;
     spinnerColor: DynamicValue<string>;
-    spinnerSize: DynamicValue<string>;
-    spinnerHeight: DynamicValue<string>;
-    spinnerWidth: DynamicValue<string>;
-    spinnerRadius: DynamicValue<string>;
-    spinnerMargin: DynamicValue<string>;
+    spinnerSize?: DynamicValue<string>;
+    spinnerHeight?: DynamicValue<string>;
+    spinnerWidth?: DynamicValue<string>;
+    spinnerRadius?: DynamicValue<string>;
+    spinnerMargin?: DynamicValue<string>;
+    ariaLiveCaption: DynamicValue<boolean>;
 }
 
 export interface SpinnerPreviewProps {
+    /**
+     * @deprecated Deprecated since version 9.18.0. Please use class property instead.
+     */
     className: string;
+    class: string;
     style: string;
     styleObject?: CSSProperties;
     readOnly: boolean;
@@ -39,4 +44,5 @@ export interface SpinnerPreviewProps {
     spinnerWidth: string;
     spinnerRadius: string;
     spinnerMargin: string;
+    ariaLiveCaption: string;
 }

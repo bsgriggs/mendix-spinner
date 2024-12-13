@@ -1,29 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<widget id="mendix.spinner.Spinner" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+<widget id="mendix.spinner.Spinner" pluginWidget="true" needsEntityContext="true"
+    offlineCapable="true"
     supportedPlatform="Web"
     xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
     <name>Spinner</name>
-    <description>A configurable spinner to be used in conjunction with other widgets</description>
+    <description>A configurable to be used in conjunction with other widgets</description>
     <helpUrl>https://github.com/bsgriggs/mendix-spinner/blob/master/README.md</helpUrl>
     <icon />
     <properties>
         <propertyGroup caption="General">
             <propertyGroup caption="Main">
                 <property key="spinnerCaption" type="textTemplate" required="false">
-                    <caption>Spinner Caption</caption>
+                    <caption>Caption</caption>
                     <description></description>
                     <translations>
                         <translation lang="en_US"></translation>
                     </translations>
                 </property>
                 <property key="speedMultiplier" type="expression" required="true" defaultValue="1">
-                    <caption>Spinner Speed</caption>
+                    <caption>Speed</caption>
                     <description></description>
                     <returnType type="Decimal" />
                 </property>
                 <property key="spinnerType" type="enumeration" defaultValue="bar">
-                    <caption>Spinner Type</caption>
+                    <caption>Type</caption>
                     <description>The style of the spinner. See https://www.davidhu.io/react-spinners/ for details</description>
                     <enumerationValues>
                         <enumerationValue key="bar">Bar</enumerationValue>
@@ -53,37 +54,48 @@
                 </property>
             </propertyGroup>
             <propertyGroup caption="Style Details">
-                <property key="spinnerColor" type="expression" required="true" defaultValue="'#d8cef5'">
-                    <caption>Spinner Color</caption>
+                <property key="spinnerColor" type="expression" required="true"
+                    defaultValue="'#146FF4'">
+                    <caption>Color</caption>
                     <description>Hex color value for the spinner</description>
                     <returnType type="String" />
                 </property>
-                <property key="spinnerSize" type="expression" defaultValue="'5em'" required="true">
-                    <caption>Spinner Size</caption>
+                <property key="spinnerSize" type="expression" defaultValue="" required="false">
+                    <caption>Size</caption>
                     <description></description>
                     <returnType type="String" />
                 </property>
-                <property key="spinnerHeight" type="expression" defaultValue="'5em'" required="true">
-                    <caption>Spinner Height</caption>
+                <property key="spinnerHeight" type="expression" defaultValue=""
+                    required="false">
+                    <caption>Height</caption>
                     <description></description>
                     <returnType type="String" />
                 </property>
-                <property key="spinnerWidth" type="expression" defaultValue="'2em'" required="true">
-                    <caption>Spinner Width</caption>
+                <property key="spinnerWidth" type="expression" defaultValue="" required="false">
+                    <caption>Width</caption>
                     <description></description>
                     <returnType type="String" />
                 </property>
-                <property key="spinnerRadius" type="expression" defaultValue="'2em'" required="true">
-                    <caption>Spinner Radius</caption>
+                <property key="spinnerRadius" type="expression" defaultValue=""
+                    required="false">
+                    <caption>Radius</caption>
                     <description></description>
                     <returnType type="String" />
                 </property>
-                <property key="spinnerMargin" type="expression" defaultValue="'2em'" required="true">
-                    <caption>Spinner Margin</caption>
+                <property key="spinnerMargin" type="expression" defaultValue=""
+                    required="false">
+                    <caption>Margin</caption>
                     <description></description>
                     <returnType type="String" />
                 </property>
             </propertyGroup>
+        </propertyGroup>
+        <propertyGroup caption="Accessibility">
+            <property key="ariaLiveCaption" type="expression" defaultValue="true" required="true">
+                <caption>Enable caption aria live?</caption>
+                <description>When true, the caption will have the aria live role forcing screen readers to announce it</description>
+                <returnType type="Boolean" />
+            </property>
         </propertyGroup>
         <propertyGroup caption="Common">
             <systemProperty key="Name"></systemProperty>

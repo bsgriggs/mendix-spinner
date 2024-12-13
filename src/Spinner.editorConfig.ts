@@ -112,12 +112,7 @@ export function getProperties(_values: SpinnerPreviewProps, defaultProperties: P
             ]);
             break;
         case "pacman":
-            hidePropertiesIn(defaultProperties, _values, [
-                "spinnerHeight",
-                "spinnerWidth",
-                "spinnerRadius",
-                "spinnerMargin"
-            ]);
+            hidePropertiesIn(defaultProperties, _values, ["spinnerHeight", "spinnerWidth", "spinnerRadius"]);
             break;
         case "propagate":
             hidePropertiesIn(defaultProperties, _values, [

@@ -17,7 +17,7 @@ export function preview({ spinnerType, spinnerCaption }: SpinnerPreviewProps): R
             }}
         >
             <span className="mx-text">{`Spinner - ${spinnerType}`}</span>
-            <Caption caption={spinnerCaption} />
+            <Caption caption={spinnerCaption} ariaLiveEnabled={false} />
         </div>
     );
 }

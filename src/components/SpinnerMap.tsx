@@ -28,8 +28,8 @@ import {
 
 export type SpinnerMapProps = {
     spinnerType: SpinnerTypeEnum;
-    spinnerColor: string;
-    speedMultiplier: number;
+    spinnerColor?: string;
+    speedMultiplier?: number;
     spinnerHeight?: string;
     spinnerMargin?: string;
     spinnerRadius?: string;
@@ -121,22 +121,15 @@ const SpinnerMap = ({
             case "pacman":
                 loader = (
                     <PacmanLoader
-                        cssOverride={{ width: `calc(${spinnerSize} * 2)`, height: `calc(${spinnerSize} * 2)` }}
                         color={spinnerColor}
+                        margin={spinnerMargin}
                         speedMultiplier={speedMultiplier}
                         size={spinnerSize}
                     />
                 );
                 break;
             case "propagate":
-                loader = (
-                    <PropagateLoader
-                        cssOverride={{ height: spinnerSize }}
-                        color={spinnerColor}
-                        speedMultiplier={speedMultiplier}
-                        size={spinnerSize}
-                    />
-                );
+                loader = <PropagateLoader color={spinnerColor} speedMultiplier={speedMultiplier} size={spinnerSize} />;
                 break;
             case "puff":
                 loader = <PuffLoader color={spinnerColor} speedMultiplier={speedMultiplier} size={spinnerSize} />;
@@ -193,7 +186,6 @@ const SpinnerMap = ({
             case "sync":
                 loader = (
                     <SyncLoader
-                        cssOverride={{ height: `calc(${spinnerSize} + 10px)` }}
                         color={spinnerColor}
                         speedMultiplier={speedMultiplier}
                         margin={spinnerMargin}
