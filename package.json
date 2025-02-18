@@ -1,7 +1,7 @@
 {
     "name": "spinner",
     "widgetName": "Spinner",
-    "version": "2.0.0",
+    "version": "2.1.0",
     "description": "A configurable spinner to be used in conjunction with other widgets",
     "copyright": "Benjamin Griggs",
     "author": "Benjamin Griggs",
