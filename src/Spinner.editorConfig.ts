@@ -150,6 +150,14 @@ export function getProperties(_values: SpinnerPreviewProps, defaultProperties: P
         case "scale":
             hidePropertyIn(defaultProperties, _values, "spinnerSize");
             break;
+        case "skeleton":
+            hidePropertiesIn(defaultProperties, _values, [
+                "spinnerSize",
+                "spinnerRadius",
+                "spinnerMargin",
+                "speedMultiplier"
+            ]);
+            break;
         case "skew":
             hidePropertiesIn(defaultProperties, _values, [
                 "spinnerHeight",

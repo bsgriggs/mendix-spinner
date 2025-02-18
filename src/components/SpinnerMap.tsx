@@ -25,9 +25,11 @@ import {
     SquareLoader,
     SyncLoader
 } from "react-spinners";
+import SkeletonLoader from "./SkeletonLoader";
 
 export type SpinnerMapProps = {
     spinnerType: SpinnerTypeEnum;
+    iterator: number;
     spinnerColor?: string;
     speedMultiplier?: number;
     spinnerHeight?: string;
@@ -39,6 +41,7 @@ export type SpinnerMapProps = {
 
 const SpinnerMap = ({
     spinnerType,
+    iterator,
     spinnerColor,
     speedMultiplier,
     spinnerHeight,
@@ -181,6 +184,16 @@ const SpinnerMap = ({
                 break;
             case "skew":
                 return <SkewLoader color={spinnerColor} speedMultiplier={speedMultiplier} size={spinnerSize} />;
+            case "skeleton":
+                return (
+                    <SkeletonLoader
+                        iterator={iterator}
+                        color={spinnerColor}
+                        width={spinnerWidth}
+                        height={spinnerHeight}
+                        speedMultiplier={speedMultiplier}
+                    />
+                );
             case "square":
                 return <SquareLoader color={spinnerColor} speedMultiplier={speedMultiplier} size={spinnerSize} />;
             case "sync":

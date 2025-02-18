@@ -25,7 +25,7 @@
                 </property>
                 <property key="spinnerType" type="enumeration" defaultValue="bar">
                     <caption>Type</caption>
-                    <description>The style of the spinner. See https://www.davidhu.io/react-spinners/ for details</description>
+                    <description>The style of the spinner. See https://www.davidhu.io/react-spinners/</description>
                     <enumerationValues>
                         <enumerationValue key="bar">Bar</enumerationValue>
                         <enumerationValue key="beat">Beat</enumerationValue>
@@ -47,10 +47,16 @@
                         <enumerationValue key="rise">Rise</enumerationValue>
                         <enumerationValue key="rotate">Rotate</enumerationValue>
                         <enumerationValue key="scale">Scale</enumerationValue>
+                        <enumerationValue key="skeleton">Skeleton</enumerationValue>
                         <enumerationValue key="skew">Skew</enumerationValue>
                         <enumerationValue key="square">Square</enumerationValue>
                         <enumerationValue key="sync">Sync</enumerationValue>
                     </enumerationValues>
+                </property>
+                <property key="count" type="expression" required="true" defaultValue="1">
+                    <caption>Count</caption>
+                    <description>Number of these spinners to display vertically</description>
+                    <returnType type="Integer" />
                 </property>
             </propertyGroup>
             <propertyGroup caption="Style Details">

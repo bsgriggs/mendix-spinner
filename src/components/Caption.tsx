@@ -9,7 +9,7 @@ const Caption = (props: CaptionProps): ReactElement => {
     if (props.caption !== undefined && props.caption.trim() !== "") {
         return (
             <span
-                className="mx-text spacing-outer-top"
+                className="mx-text"
                 role={props.ariaLiveEnabled ? "alert" : undefined}
                 aria-live={props.ariaLiveEnabled ? "polite" : undefined}
             >

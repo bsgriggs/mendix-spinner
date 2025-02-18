@@ -7,7 +7,31 @@ import { CSSProperties } from "react";
 import { DynamicValue } from "mendix";
 import { Big } from "big.js";
 
-export type SpinnerTypeEnum = "bar" | "beat" | "bounce" | "circle" | "climbingBox" | "clip" | "clock" | "dot" | "fade" | "grid" | "hash" | "moon" | "pacman" | "propagate" | "puff" | "pulse" | "ring" | "rise" | "rotate" | "scale" | "skew" | "square" | "sync";
+export type SpinnerTypeEnum =
+    | "bar"
+    | "beat"
+    | "bounce"
+    | "circle"
+    | "climbingBox"
+    | "clip"
+    | "clock"
+    | "dot"
+    | "fade"
+    | "grid"
+    | "hash"
+    | "moon"
+    | "pacman"
+    | "propagate"
+    | "puff"
+    | "pulse"
+    | "ring"
+    | "rise"
+    | "rotate"
+    | "scale"
+    | "skeleton"
+    | "skew"
+    | "square"
+    | "sync";
 
 export interface SpinnerContainerProps {
     name: string;
@@ -17,6 +41,7 @@ export interface SpinnerContainerProps {
     spinnerCaption?: DynamicValue<string>;
     speedMultiplier: DynamicValue<Big>;
     spinnerType: SpinnerTypeEnum;
+    count: DynamicValue<Big>;
     spinnerColor: DynamicValue<string>;
     spinnerSize?: DynamicValue<string>;
     spinnerHeight?: DynamicValue<string>;
@@ -38,6 +63,7 @@ export interface SpinnerPreviewProps {
     spinnerCaption: string;
     speedMultiplier: string;
     spinnerType: SpinnerTypeEnum;
+    count: string;
     spinnerColor: string;
     spinnerSize: string;
     spinnerHeight: string;

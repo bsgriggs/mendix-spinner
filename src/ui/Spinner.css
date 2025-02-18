@@ -1,7 +1,8 @@
-.mx-spinner{
+.mx-spinner {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1em;
+    padding: 1rem;
+    gap: 1rem;
 }
